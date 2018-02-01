@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 20px; }
+
+.logo {
+  width: 80px;
+  height: 80px; }
+
+.content {
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  padding: 20px;
+  align-items: flex-start;
+  background-color: #eee; }
+  .content .team-info {
+    position: relative;
+    width: 160px;
+    height: 80px;
+    padding: 20px;
+    background-color: white; }
+    .content .team-info .team-name {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 60px;
+      margin: 0;
+      font-size: 17px;
+      line-height: 18px; }
+  .content .team-introduction {
+    width: 70%;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: white; }
+  .content .team-member-info {
+    width: 80px;
+    margin-left: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: white; }
+    .content .team-member-info img {
+      margin: 10px 0; }
+
+/*# sourceMappingURL=main_position.css.map */

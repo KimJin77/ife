@@ -1,0 +1,30 @@
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.content {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  margin-top: calc(50% - 100px);
+  margin-left: calc(50% - 200px);
+  background: #ccc;
+  overflow: hidden; }
+  .content .circle {
+    border-radius: 50px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #fc0; }
+    .content .circle:first-child {
+      top: -50px;
+      left: -50px; }
+    .content .circle:last-child {
+      right: -50px;
+      bottom: -50px; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,145 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dedede; }
+  body ul {
+    list-style: none; }
+
+nav {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  background-color: #333333; }
+  nav .home {
+    display: inline-flex;
+    width: 120px;
+    height: 60px;
+    margin-left: 40px;
+    align-items: center; }
+    nav .home .logo {
+      width: 120px;
+      height: 44px; }
+  nav ul {
+    display: inline-flex;
+    margin-right: 20px;
+    list-style: none; }
+    nav ul li::before {
+      content: "•";
+      padding-left: 10px;
+      color: black;
+      font-size: 10px; }
+    nav ul li a {
+      font-size: 10px;
+      text-decoration: none; }
+      nav ul li a:link {
+        color: white; }
+      nav ul li a:visited {
+        color: #abb1af; }
+      nav ul li a:hover {
+        color: #3a7ace; }
+      nav ul li a:focus, nav ul li a:active {
+        color: white; }
+
+article {
+  margin: 20px;
+  padding: 40px 20px;
+  border-right: 2px solid #848484;
+  border-bottom: 2px solid #848484;
+  font-size: 15px;
+  background-color: white; }
+  article header .title {
+    font-size: 20px; }
+  article header .subtitle {
+    font-size: 15px;
+    color: #808080; }
+  article header .article-info {
+    font-size: 10px;
+    color: #808080; }
+  article .content .detail {
+    width: 120px;
+    height: 125px;
+    margin-top: 15px;
+    margin-left: 40px;
+    text-align: center;
+    border: 1px solid #cbcbcb; }
+    article .content .detail img {
+      width: 100px;
+      height: 80px; }
+  article .content p {
+    margin: 0;
+    line-height: 30px; }
+    article .content p .graph {
+      text-indent: 30px; }
+  article table {
+    width: 100%;
+    border: 1px solid #cecece;
+    font-size: 12px;
+    border-spacing: 0; }
+    article table td {
+      height: 25px;
+      padding: 0;
+      padding-left: 8px;
+      border: 1px solid #cecece; }
+    article table thead {
+      color: white;
+      background-color: #333333;
+      border: 1px solid #cecece; }
+    article table tfoot {
+      font-weight: bold;
+      background-color: #cecece; }
+
+aside {
+  margin: 20px;
+  padding: 20px;
+  border-right: 2px solid #848484;
+  border-bottom: 2px solid #848484;
+  font-size: 15px;
+  background-color: white; }
+  aside .title {
+    margin-top: 0;
+    font-size: 18px; }
+    aside .title::before {
+      content: "|";
+      padding-right: 10px;
+      vertical-align: middle;
+      color: #cecece;
+      font-size: 30px; }
+  aside form {
+    width: 100%; }
+    aside form .form-block {
+      margin-bottom: 10px;
+      margin-left: 270px; }
+      aside form .form-block label {
+        display: inline-block;
+        width: 160px;
+        text-align: right; }
+      aside form .form-block input {
+        vertical-align: top; }
+      aside form .form-block .prompt {
+        margin-left: 170px;
+        font-size: 10px;
+        color: #cecece; }
+      aside form .form-block .password {
+        margin-top: 10px; }
+      aside form .form-block textarea {
+        width: 765px;
+        height: 98px;
+        vertical-align: top; }
+    aside form .submit-button {
+      width: 100%;
+      height: 40px;
+      border: 0;
+      border-radius: 3px;
+      font-size: 18px;
+      color: white;
+      background-color: #3355D0; }
+
+footer {
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+  background-color: #333333; }
+
+/*# sourceMappingURL=main.css.map */

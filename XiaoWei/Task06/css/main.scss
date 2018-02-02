@@ -1,0 +1,199 @@
+$red-color: #d45d5c;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #eeeeee;
+}
+
+body {
+    width: 980px;
+    height: 1386px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.top, article, footer {
+    margin: 0 44px;
+}
+
+.top {
+    border-bottom: 2px solid #938e8c;
+
+    .logo {
+        // display: inline-block;
+        position: relative;
+        width: 110px;
+        height: 60px;
+        background: $red-color;
+
+        p {
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+            font: 12px "黑体";
+            color: #ffffff;
+        }
+    }
+
+    .date-time {
+        float: right;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        font: 12px "黑体";
+        color: #d45d5c;
+    }
+}
+
+.first-article {
+
+    margin-top: 25px;
+
+    header {
+        float: right;
+        width: 203px;
+        border-top: 2px solid #cc8091;
+
+        .title1, .title2 {
+            display: inline-block;
+            font: 24px/40px "MicrosoftYaHei";
+            text-transform: uppercase;
+            border-bottom: 2px solid #000;
+
+            span {
+                font-size: 20px;
+            }
+        }
+
+        .subtitle {
+            margin-top: 5px;
+            font: 12px/10px "STKaitiSC-Kai";
+            color: #676767;
+        }
+
+        .large-green-num {
+            margin-top: 17px;
+            color: #75b86b;
+            font: italic 116px/1 "MicrosoftYaHei";
+        }
+
+        .bottom-pink-num {
+            line-height: 55px;
+            color: #cc8091;
+            font-family: "MicrosoftYaHei";
+
+            .left-num {
+                font-size: 55px;
+            }
+
+            .right-description {
+                float: right;
+                margin-top: 18px;
+                margin-right: 35px;
+
+                & p:first-child {
+                    font-size: 21px;
+                    line-height: 21px;
+                }
+                & p:last-child {
+                    color: grey;
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+            }
+        }
+    }
+
+    .tenochologe-img {
+        position: relative;
+        width: 641px;
+        height: 301px;
+
+        img {
+            width: 641px;
+            height: 301px;
+        }
+
+        .green-mask, .pink-mask {
+            position: absolute;
+            width: 191px;
+            height: 301px;
+        }
+
+        .green-mask {
+            background: #a0c5ac77;
+        }
+
+        .pink-mask {
+            right: 0;
+            bottom: 0;
+            background: #e5babf77;
+        }
+    }
+
+    .detail {
+        display: flex;
+        align-items: flex-start;
+        width: 641px;
+        height: 170px;
+        margin-top: 40px;
+
+        .detail-container {
+            &.left {
+                width: 31%;
+            }
+
+            &.middle {
+                width: 31%;
+                margin-left: 28px;
+                margin-right: 28px;
+            }
+
+            &.right {
+                width: 31%;
+
+                ul {
+                    list-style: none;
+                    margin-top: 70px;
+                    padding-top: 25px;
+                    color: #231815b3;
+                    font: 12px/16px "MicrosoftYaHei";
+
+                    & span {
+                        font-style: italic;
+                        color: #cd4a48b3;
+                    }
+                }
+            }
+            
+        }
+
+
+
+        & .detail-title {
+            font: bold 16px "MicrosoftYaHei";
+            text-decoration: underline;
+
+            &.green {
+                color: #418c59;
+            }
+
+            &.brown {
+                color: #d2994f;
+            }
+
+            &.pink {
+                color: #cc7680;
+            }
+        }
+
+        & .content {
+            margin-top: 11px;
+            color: #231815b3;
+            font: 12px/16px "MicrosoftYaHei";
+        }
+    }
+}

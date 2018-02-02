@@ -1,0 +1,230 @@
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #dedede;
+
+    ul {
+        list-style: none;
+    }
+}
+
+nav {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    background-color: #333333;
+    
+    .home {
+        display: inline-flex;
+        width: 120px;
+        height: 60px;
+        margin-left: 40px;
+        align-items: center;
+
+        .logo {
+            width: 120px;
+            height: 44px;
+        }
+    }
+
+    ul {
+        display: inline-flex;
+        margin-right: 20px;
+        
+        list-style: none;
+
+        li::before {
+            content: "•";
+            padding-left: 10px;
+            color: black;
+            font-size: 10px;
+        }
+
+        li {
+            a {
+                font-size: 10px;
+                &:link {
+                    color: white;
+                }
+                &:visited {
+                    color: #abb1af;
+                }
+
+                &:hover {
+                    color: #3a7ace;
+                }
+
+                &:focus, &:active {
+                    color: white;
+                }
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+$subtitle-color: #808080;
+
+.articles {
+    width: 70%;
+}
+
+article {
+    margin: 20px;
+    padding: 40px 20px;
+    border-right: 2px solid #848484;
+    border-bottom: 2px solid #848484;
+    font-size: 15px;
+    background-color: white;
+
+    header {
+        .title {
+            font-size: 20px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: $subtitle-color;
+        }
+
+        .article-info {
+            font-size: 10px;
+            color: $subtitle-color;
+        }
+    }
+
+    .content {
+        .detail {
+            width: 120px;
+            height: 125px;
+            margin-top: 15px;
+            margin-left: 40px;
+            text-align: center;
+            border: 1px solid #cbcbcb;
+
+            img {
+                width: 100px;
+                height: 80px;
+            }
+        }
+
+        p {
+            margin: 0;
+            line-height: 30px;
+            .graph {
+                text-indent: 30px;
+            }
+        }
+    }
+
+    .img-list {
+        display: inline-block;
+
+        ul li {
+            display: inline-block;
+        }
+    }
+
+    table {
+        width: 100%;
+        border: 1px solid #cecece;
+        font-size: 12px;
+        border-spacing: 0;
+
+        & td {
+            height: 25px;
+            padding: 0;   
+            padding-left: 8px; 
+            border: 1px solid #cecece;
+        }
+
+        thead {
+            color: white;
+            background-color: #333333;
+            border: 1px solid #cecece;
+        }
+
+        tfoot {
+            font-weight: bold;
+            background-color: #cecece;
+        }
+    }
+}
+
+aside {
+    float: right;
+    width: 363px;
+    margin: 20px;
+    padding: 20px;
+    border-right: 2px solid #848484;
+    border-bottom: 2px solid #848484;
+    font-size: 15px;
+    background-color: white;
+
+    .title {
+        &::before {
+            content: "|";
+            padding-right: 10px;
+            vertical-align: middle;
+            color: #cecece;
+            font-size: 30px;
+        }
+
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    form {
+        width: 100%;
+        
+        .form-block {
+            margin-bottom: 10px;            
+
+            label {
+                display: inline-block;
+                width: 160px;
+                text-align: right;
+            }
+
+            input {
+                vertical-align: top;
+            }
+
+            .prompt {
+                margin-left: 170px;
+                font-size: 10px;
+                color: #cecece;
+            }
+            
+            .password {
+                margin-top: 10px;
+            }
+
+            textarea {
+                // width: 100%;
+                height: 98px;
+                vertical-align: top;
+            }
+        }
+
+        .submit-button {
+            width: 100%;
+            height: 40px;
+            border: 0;
+            border-radius: 3px;
+            font-size: 18px;
+            color: white;
+            background-color: #3355D0;
+        }
+    }
+}
+
+footer {
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    background-color: #333333;
+}

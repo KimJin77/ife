@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "MicrosoftYaHei"; }
+
+ul {
+  list-style: none; }
+
+html, body {
+  min-width: 1280px; }
+
+.seperator {
+  width: 35px;
+  height: 2px;
+  margin: 20px auto;
+  background: #fff; }
+  .seperator.red-seperator {
+    background: #e45050; }
+  .seperator.gray-seperator {
+    background: #aaa; }
+
+nav {
+  display: flex;
+  height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: #ffffff; }
+  nav .logo {
+    display: flex;
+    margin-left: 4.6%;
+    align-items: center; }
+    nav .logo a {
+      margin-right: 12px; }
+    nav .logo span {
+      font: 21px "SimHei"; }
+  nav .right-items {
+    margin-right: 4.6%;
+    width: 600px; }
+    nav .right-items ul li {
+      display: inline-block;
+      width: 64px;
+      height: 51px;
+      margin: 0 10px;
+      line-height: 56px;
+      font-size: 14px;
+      text-align: center; }
+      nav .right-items ul li a:link, nav .right-items ul li a:visited {
+        color: #83868d; }
+      nav .right-items ul li a.active {
+        color: #e45050; }
+      nav .right-items ul li a.login-item {
+        color: #e45050; }
+        nav .right-items ul li a.login-item span {
+          margin-left: 3px; }
+      nav .right-items ul li.active {
+        border-bottom: 5px solid #e45050; }
+
+.section-1 {
+  display: flex;
+  align-items: center;
+  background: url("../source/section_1_bg.png") no-repeat;
+  background-size: cover;
+  height: 690px; }
+  .section-1 .titles {
+    margin-left: 116px;
+    color: white; }
+    .section-1 .titles h2 {
+      font-size: 48px; }
+    .section-1 .titles .description {
+      margin-top: 30px;
+      margin-bottom: 68px;
+      font-size: 20px;
+      line-height: 28px; }
+    .section-1 .titles button {
+      width: 330px;
+      height: 60px;
+      color: white;
+      background: #e45050;
+      border: 0;
+      font-size: 30px; }
+
+.section-2 ul {
+  font-size: 0; }
+  .section-2 ul li {
+    position: relative;
+    box-sizing: border-box;
+    width: 25%;
+    height: 250px;
+    padding: 45px 90px;
+    float: left;
+    text-align: center; }
+    .section-2 ul li p {
+      margin-top: 45px;
+      font-size: 14px;
+      line-height: 18px; }
+    .section-2 ul li.af-seperator::after {
+      position: absolute;
+      content: "";
+      width: 3px;
+      height: 55px;
+      top: 134px;
+      right: 0;
+      background: #bbb; }
+.section-2 .clear {
+  clear: both; }
+
+.section-3 {
+  background: #ededed;
+  text-align: center;
+  padding-top: 89px;
+  padding-bottom: 40px; }
+  .section-3 p {
+    margin-top: 48px;
+    color: #a0a0a0;
+    font: 53px "SimHei"; }
+
+.section-4 {
+  height: 340px;
+  padding-top: 50px;
+  background: url("../source/map.png") no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center; }
+  .section-4 .title {
+    font: 21px "MicrosoftYaHei"; }
+  .section-4 .horizontal-line {
+    width: 32px;
+    height: 3px;
+    margin: 15px auto 20px auto;
+    background: white; }
+  .section-4 .description {
+    font: 15px "MicrosoftYaHei"; }
+  .section-4 form {
+    margin-top: 55px; }
+    .section-4 form select {
+      width: 226px;
+      height: 38px;
+      margin-left: 15px;
+      margin-right: 15px;
+      padding-left: 15px;
+      background: white;
+      border-radius: 0;
+      border: 0;
+      color: #a8aaaa; }
+    .section-4 form input[type="submit"] {
+      width: 226px;
+      height: 38px;
+      margin-left: 15px;
+      background: #e45050;
+      border: 0;
+      color: white;
+      font-size: 14px; }
+
+.section-5 {
+  height: 607px;
+  background: #f8f8f7;
+  text-align: center;
+  padding-top: 101px;
+  box-sizing: border-box; }
+  .section-5 li {
+    display: inline-block; }
+    .section-5 li .img-container {
+      width: 220px;
+      height: 335px;
+      box-sizing: border-box;
+      padding: 15px;
+      margin: 0 20px;
+      background: #fff;
+      border: 1px solid #e1e1e1; }
+      .section-5 li .img-container img {
+        width: 100%;
+        height: 100%; }
+    .section-5 li .city {
+      margin: 12px 0;
+      font-size: 15px; }
+      .section-5 li .city.active-city {
+        font-size: 20px; }
+    .section-5 li .activity {
+      margin-bottom: 10px;
+      color: #909090;
+      font-size: 13px; }
+
+.section-6 {
+  height: 569px; }
+  .section-6 .container {
+    display: flex;
+    height: 100%; }
+  .section-6 .left {
+    width: 66.4%;
+    height: 100%;
+    padding-top: 130px;
+    box-sizing: border-box;
+    background: url("../source/section_6_img.png");
+    text-align: center;
+    color: white;
+    font-size: 20px; }
+    .section-6 .left .zh-title {
+      font-size: 50px; }
+    .section-6 .left .en-title {
+      font-size: 120px;
+      line-height: 120px; }
+    .section-6 .left .city, .section-6 .left .time {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+  .section-6 .right {
+    position: relative;
+    width: 33.6%;
+    padding-top: 160px;
+    text-align: center; }
+    .section-6 .right:before {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 50%;
+      left: -30px;
+      box-sizing: border-box;
+      content: " ";
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-right: 15px solid #fff; }
+    .section-6 .right .title {
+      font-size: 25px; }
+      .section-6 .right .title span {
+        color: #e45050; }
+    .section-6 .right .content {
+      margin: 40px 70px; }
+    .section-6 .right button {
+      padding: 10px 25px;
+      background: #fff;
+      color: #e45050;
+      border: 1px solid #e45050; }
+
+.section-7 {
+  height: 525px; }
+  .section-7 button {
+    width: 173px;
+    height: 40px;
+    border: 1px solid white;
+    font-size: 20px; }
+  .section-7 .container {
+    display: flex;
+    height: 100%;
+    text-align: center; }
+    .section-7 .container .sub-element {
+      width: 33.333333%; }
+    .section-7 .container .left {
+      background: #e45050;
+      color: #fff;
+      box-sizing: border-box;
+      padding-top: 177px;
+      font-size: 20px; }
+      .section-7 .container .left p {
+        margin: 15px 0; }
+      .section-7 .container .left .rb-wf {
+        color: #fff;
+        background: #e45050; }
+    .section-7 .container .middle {
+      position: relative;
+      color: #000;
+      box-sizing: border-box;
+      padding-top: 177px;
+      font-size: 20px; }
+      .section-7 .container .middle p {
+        margin: 15px 0; }
+      .section-7 .container .middle .wb-rf {
+        color: #e45050;
+        border-color: #e45050;
+        background: #fff; }
+    .section-7 .container .right {
+      position: relative; }
+      .section-7 .container .right:before {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        left: 0;
+        box-sizing: border-box;
+        content: " ";
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 30px solid #fff; }
+
+.section-8 {
+  height: 750px;
+  box-sizing: border-box;
+  padding: 119px 168px 139px; }
+  .section-8 .top {
+    text-align: center; }
+    .section-8 .top .title {
+      font-size: 22px; }
+    .section-8 .top .description {
+      font-size: 10px;
+      color: #aaa;
+      padding-left: 27%;
+      padding-right: 27%; }
+  .section-8 .bottom {
+    display: flex;
+    margin-top: 105px; }
+    .section-8 .bottom .left {
+      width: 288px; }
+      .section-8 .bottom .left .terms .buttons {
+        text-align: right; }
+        .section-8 .bottom .left .terms .buttons .more {
+          font-size: 7px;
+          color: #aaa; }
+      .section-8 .bottom .left .title {
+        font-size: 14px; }
+      .section-8 .bottom .left .content {
+        margin-top: 28px;
+        font-size: 11px;
+        color: #aaa; }
+      .section-8 .bottom .left .mid-terms {
+        margin-top: 20px;
+        margin-bottom: 33px; }
+    .section-8 .bottom .right {
+      margin-left: 78px; }
+      .section-8 .bottom .right .form-line {
+        display: flex; }
+        .section-8 .bottom .right .form-line .input-line {
+          width: 310px;
+          height: 42px;
+          margin-bottom: 15px;
+          background: #edecee; }
+          .section-8 .bottom .right .form-line .input-line.left-mg {
+            margin-left: 18px; }
+          .section-8 .bottom .right .form-line .input-line label {
+            display: inline-block;
+            margin: 16px 20px;
+            font-size: 12px;
+            line-height: 12px; }
+          .section-8 .bottom .right .form-line .input-line input {
+            display: inline-block;
+            width: 60%;
+            height: 100%;
+            background: transparent;
+            outline: none;
+            border: 0; }
+      .section-8 .bottom .right .area-line {
+        background: #edecee;
+        padding: 16px 20px;
+        height: 120px; }
+        .section-8 .bottom .right .area-line label {
+          display: block;
+          font-size: 12px;
+          line-height: 12px; }
+        .section-8 .bottom .right .area-line textarea {
+          display: block;
+          margin-top: 10px;
+          background: transparent;
+          border: 0; }
+      .section-8 .bottom .right input[type="submit"] {
+        width: 100%;
+        height: 44px;
+        margin-top: 16px;
+        background: #edecee;
+        border: 0; }
+
+.section-9 {
+  padding-top: 92px;
+  padding-bottom: 75px;
+  box-sizing: border-box;
+  text-align: center;
+  background: #32363e;
+  color: #fff; }
+  .section-9 .contact-title {
+    font-size: 20px;
+    margin-bottom: 13px; }
+  .section-9 .description {
+    font-size: 12px; }
+  .section-9 form {
+    margin-top: 30px; }
+    .section-9 form .email {
+      width: 430px;
+      height: 40px;
+      box-sizing: border-box;
+      padding-left: 10px;
+      border: 0;
+      outline: none; }
+    .section-9 form .submit-button {
+      width: 80px;
+      height: 40px;
+      margin-left: 0;
+      background: #6f7178;
+      border: 0;
+      font-size: 14px;
+      color: #fff; }
+  .section-9 li {
+    display: inline-block;
+    margin: 38px 0 15px 15px; }
+
+footer {
+  position: relative;
+  height: 58px;
+  background: #2f2f38;
+  color: #fff;
+  font-size: 12px; }
+  footer .copyright {
+    position: absolute;
+    left: 12.8%;
+    bottom: 17px; }
+  footer .back {
+    position: absolute;
+    right: 12.8%;
+    bottom: 17px; }
+
+/*# sourceMappingURL=main.css.map */
